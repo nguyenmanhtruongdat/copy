@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTRAVEL - Super travel app</title>
+    <link href='https://fonts.googleapis.com/css?family=Rubik Moonrocks' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="https://dulichbacha.net/wp-content/uploads/2017/11/travel-icon-png-25.png"
+        type="image/x-icon">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- aos lib -->
+</head>
+
+<body>
+
+    <!-- loading animation -->
+    <div class="preloading">
+    </div>
+
+    <!-- header section starts  -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #ffffff;">
+        <a class="navbar-brand" href="#index.html"><span
+                style="font-family: 'Rubik Moonrocks'; font-size: 40px;">D</span><span
+                style="font-family: 'Rubik Moonrocks';">TRAVEL</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03"
+            aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor03">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#index.html">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#multi-item">Đặt tour</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery">Thư viện</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#review">Trải nghiệm</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Về chúng tôi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Liên hệ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Đăng nhập/Đăng ký</a>
+                </li>
+            </ul>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Bạn muốn đi đâu?" aria-label="Search"
+                    style="font-size: 16px; width: 300px;">
+                <a href=""> <i class="fa-solid fa-magnifying-glass" style="font-size: 20px; cursor: pointer;"></i></a>
+            </form>
+        </div>
+    </nav>
+
+    <!-- header section ends -->
+
+    <!-- login form container  -->
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3 data-aos="fade-down" data-aos-easing="ease-in-sine" data-aos-duration="1500">Đà Nẵng Fantasticity!</h3>
+            <p style="font-family: 'Brush Script MT', Courier; font-size: 3rem;" data-aos="fade-up"
+                data-aos-easing="ease-in-sine" data-aos-duration="1500">Book a ticket and just leave!</p>
+            <button class="btn btnChinh" data-aos="fade-down" data-aos-easing="ease-in-sine" data-aos-duration="1500">Tìm hiểu thêm</button>
+        </div>
+
+        <div class="video-container">
+            <img src="images/home1.jpg" alt="">
+        </div>
+
+
+        <!-- <div id="slides" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#slides" data-slide-to="0" class="active"></li>
+                <li data-target="#slides" data-slide-to="1"></li>
+                <li data-target="#slides" data-slide-to="2"></li>		
+                <li data-target="#slides" data-slide-to="3"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/slide1.jpg">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/slide1.jpg">
+
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/slide1.jpg">
+
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/slide1.jpg">
+
+                </div>
+            </div>
+        </div> -->
+
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- packages section starts  -->
+
+    <div id="multi-item" class="carousel slide carousel-multi-item" data-ride="carousel">
+        <!--Indicators-->
+        <ol class="carousel-indicators">
+            <li data-target="#multi-item" data-slide-to="0" class="active"></li>
+            <li data-target="#multi-item" data-slide-to="1"></li>
+            <li data-target="#multi-item" data-slide-to="2"></li>
+        </ol>
+        <!--/.Indicators-->
+        <h1 class="heading" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+            <span>Tour hot nhất</span>
+        </h1>
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+
+            <!--First slide-->
+            <div class="carousel-item active">
+
+                <div class="row">
+                    <div class="col-md-4" data-aos="fade-right" data-aos-duration="1500">
+                        <div class="card mb-2">
+                            <img class="card-img-top" src="images/tour/tour1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">TOUR ĐÀ NẴNG - HỘI AN- KDL BÀ NÀ - CẦU VÀNG</h4>
+                                <p class="card-text">Thời gian : 3 ngày 2 đêm <br>
+                                    Phương tiện : Hàng không Vietnam Airlines <br>
+                                    - Viếng chùa Linh Ứng Bãi Bụt - ngôi chùa lớn nhất ở thành phố...</p>
+                                <a class="btn btn-primary">Đặt ngay</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 clearfix d-none d-md-block" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="card mb-2">
+                            <img class="card-img-top" src="images/tour/tour2.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">TOUR ĐÀ NẴNG - HỘI AN - KDL BÀ NÀ -SUỐI KHOÁNG THẦN TÀI -
+                                    HUẾ</h4>
+                                <p class="card-text">Thời gian : 5 ngày 4 đêm <br>
+                                    Phương tiện : Hàng không Vietnam Airlines <br>
+                                    - Khởi hành (thứ 4): 29/06/2022; 06, 13, 20, 27/07/2022; 03, 10, 17, 24/08/2022;
+                                    07,...</p>
+                                <a class="btn btn-primary">Đặt ngay</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 clearfix d-none d-md-block" data-aos="fade-left" data-aos-duration="1500">
+                        <div class="card mb-2">
+                            <img class="card-img-top" src="images/tour/tour3.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">TOUR ĐÀ NẴNG - HỘI AN - ĐỘNG THIÊN ĐƯỜNG - HUẾ - BÀ NÀ -
+                                    CẦU VÀNG</h4>
+                                <p class="card-text">Thời gian : 5 ngày 4 đêm <br>
+                                    Phương tiện : Đi về bằng máy bay <br>
+                                    - Khởi hành (thứ 4): 01, 08, 15, 22/06/2022 - Viếng chùa Linh Ứng Bãi...</p>
+                                <a class="btn btn-primary">Đặt ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--/.First slide-->
+
+            <!--Second slide-->
+            <div class="carousel-item">
+
+                <div class="row">
+                    <div class="col-md-4" data-aos="fade-right" data-aos-duration="1500">
+                        <div class="card mb-2">
+                            <img class="card-img-top" src="images/tour/tour4.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">TOUR CUỘC ĐUA KỲ THÚ ĐÀ NẴNG - HỘI AN - KHÁNH HOÀ</h4>
+                                <p class="card-text">
+                                    Thời gian: 7 ngày 7 đêm <br>
+                                    Phương tiện: Hãng hàng không Bamboo
+                                    -Một tour do chúng tôi phối hợp với gameshow cuộc đua kỳ thú tổ chức sẽ đem...</p>
+                                <a class="btn btn-primary">Đặt ngay</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 clearfix d-none d-md-block">
+                        <div class="card mb-2" data-aos="fade-up" data-aos-duration="1500">
+                            <img class="card-img-top" src="images/tour/tour5.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">TOUR HÈ 2022 - ĐÀ NẴNG - HỘI AN - BÀ NÀ - HÀNG KHÔNG
+                                    VIEJET</h4>
+                                <p class="card-text">Thời gian : 2 ngày 3 đêm <br>
+                                    Phương tiện : Hãng hàng không VietJet <br>
+                                    - Khởi hành (thứ 7): 11, 25/06/2022; 02, 16, 23, 30/07/2022; 06, 13, 20,
+                                    27/08/2022;...</p>
+                                <a class="btn btn-primary">Đặt ngay</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 clearfix d-none d-md-block" data-aos="fade-left" data-aos-duration="1500">
+                        <div class="card mb-2">
+                            <img class="card-img-top" src="images/tour/tour6.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">TOUR ĐÀ NẴNG - HỘI AN - ĐỘNG THIÊN ĐƯỜNG - HUẾ - BÀ NÀ -
+                                    CẦU VÀNG</h4>
+                                <p class="card-text">Thời gian : 5 ngày 4 đêm <br>
+                                    Phương tiện : Đi về bằng máy bay <br>
+                                    - Khởi hành (thứ 4): 01, 08, 15, 22/06/2022 - Viếng chùa Linh Ứng Bãi...</p>
+                                <a class="btn btn-primary">Đặt ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--/.Second slide-->
+
+            <!--Third slide-->
+            <div class="carousel-item">
+
+                <div class="row">
+                    <div class="col-md-4" data-aos="fade-right" data-aos-duration="1500">
+                        <div class="card mb-2">
+                            <img class="card-img-top" src="images/tour/tour7.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">TOUR ĐÀ NẴNG - HỘI AN - HUẾ - QUẢNG BÌNH: HÀNH TRÌNH DI SẢN MIỀN
+                                    TRUNG</h4>
+                                <p class="card-text">Thời gian : 4 ngày 3 đêm <br>
+                                    Phương tiện : Hàng không Vietnam Airlines <br>
+                                    - Tặng balo du lịch cho 10 khách hàng thanh toán đầu tiên - Tặng...</p>
+                                <a class="btn btn-primary">Đặt ngay</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 clearfix d-none d-md-block" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="card mb-2">
+                            <img class="card-img-top" src="images/tour/tour8.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">TOUR DU LỊCH HÈ - TOUR DU LỊCH ĐÀ NẴNG - HUẾ - THÁNH ĐỊA LA
+                                    VANG - ĐỘNG THIÊN ĐƯỜNG</h4>
+                                <p class="card-text">Thời gian: 3 ngày 4 đêm <br>
+                                    Hành trình: Tour Hè 2022 - Đà Nẵng - Bà Nà Hills - Ngũ Hành Sơn - Phố cổ Hội An -
+                                    Đại Nội - Huế
+                                    <br>
+                                    - Khởi hành (thứ 7): đu cáp Bà Nà, thăm đại nội...
+                                </p>
+                                <a class="btn btn-primary">Đặt ngay</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="col-md-4 clearfix d-none d-md-block">
+                        <div class="card mb-2">
+                            <img class="card-img-top"
+                                src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the
+                                    card's content.</p>
+                                <a class="btn btn-primary">Đặt ngay</a>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+
+            </div>
+            <!--/.Third slide-->
+        </div>
+        <!--/.Slides-->
+
+    </div>
+
+    <!-- packages section ends -->
+
+    <!-- services section starts  -->
+
+    <!-- <section class="services" id="services">
+
+        <h1 class="heading">
+            <span>s</span>
+            <span>e</span>
+            <span>r</span>
+            <span>v</span>
+            <span>i</span>
+            <span>c</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-hotel"></i>
+                <h3>affordable hotels</h3>
+            </div>
+            <div class="box">
+                <i class="fas fa-utensils"></i>
+                <h3>food and drinks</h3>
+            </div>
+            <div class="box">
+                <i class="fas fa-bullhorn"></i>
+                <h3>dedicated guide</h3>
+            </div>
+            <div class="box">
+                <i class="fas fa-plane"></i>
+                <h3>fastest travel</h3>
+            </div>
+        </div>
+
+    </section> -->
+
+    <!-- services section ends -->
+
+    <!-- gallery section starts  -->
+    <br> <br>
+    <section class="gallery" id="gallery">
+
+        <h1 class="heading" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+            <span>Khoảnh khắc nổi bật</span>
+        </h1>
+        <br> <br>
+        <div class="box-container">
+
+            <div class="box" data-aos="fade-right" data-aos-duration="1500">
+                <img src="images/kk1.jpg" alt="">
+                <div class="content">
+                    <h3> <br> Cầu vàng</h3>
+                </div>
+            </div>
+            <div class="box" data-aos="fade-right" data-aos-duration="1500">
+                <img src="images/kk2.jpg" alt="">
+                <div class="content">
+                    <h3> <br>Bà Nà Hills</h3>
+                </div>
+            </div>
+            <div class="box" data-aos="fade-right" data-aos-duration="1500">
+                <img src="images/kk3.jpg" alt="">
+                <div class="content">
+                    <h3> <br> Biển Mỹ Khê</h3>
+                </div>
+            </div>
+            <div class="box" data-aos="fade-right" data-aos-duration="1500">
+                <img src="images/kk4.jpg" alt="">
+                <div class="content">
+                    <h3> <br> Chùa Linh Ứng </h3>
+                </div>
+            </div>
+            <div class="box" data-aos="fade-left" data-aos-duration="1500">
+                <img src="images/kk5.jpg" alt="">
+                <div class="content">
+                    <h3> <br> Động Thiên Đường</h3>
+                </div>
+            </div>
+            <div class="box" data-aos="fade-left" data-aos-duration="1500">
+                <img src="images/kk6.jpg" alt="">
+                <div class="content">
+                    <h3> <br> Vòng quay mặt trời</h3>
+                </div>
+            </div>
+            <div class="box" data-aos="fade-left" data-aos-duration="1500">
+                <img src="images/kk7.jpg" alt="">
+                <div class="content">
+                    <h3> <br> Phố cổ Hội An</h3>
+                </div>
+            </div>
+            <div class="box" data-aos="fade-left" data-aos-duration="1500">
+                <img src="images/kk8.jpg" alt="">
+                <div class="content">
+                    <h3> <br> Cố Đô Huế</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- gallery section ends -->
+
+    <!-- review section starts  -->
+    <div class="container-lg" id="review" data-aos="fade-up" data-aos-duration="1500">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="heading" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                    <span>Trải nghiệm của du khách</span>
+                </h1>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Carousel indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Wrapper for carousel items -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="testimonial-wrapper">
+                                        <div class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus,
+                                            dapibus nec turpis vel, semper malesuada ante, commodo iacul viverra.</div>
+                                        <div class="media">
+                                            <img src="/images/khanhvan.jpg" class="mr-3" alt="">
+                                            <div class="media-body">
+                                                <div class="overview">
+                                                    <div class="name"><b>Paula Wilson</b></div>
+                                                    <div class="details">Media Analyst / SkyNet</div>
+                                                    <div class="star-rating">
+                                                        <ul class="list-inline">
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-sta"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="testimonial-wrapper">
+                                        <div class="testimonial">Vestibulum quis quam ut magna consequat faucibus.
+                                            Pellentesque eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque
+                                            virra. Quis quam ut magna consequat faucibus, metus id mi gravida.</div>
+                                        <div class="media">
+                                            <img src="/images/ngoctrinh.jpg" class="mr-3" alt="">
+                                            <div class="media-body">
+                                                <div class="overview">
+                                                    <div class="name"><b>Antonio Moreno</b></div>
+                                                    <div class="details">Web Developer / SoftBee</div>
+                                                    <div class="star-rating">
+                                                        <ul class="list-inline">
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star-o"></i>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="testimonial-wrapper">
+                                        <div class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus,
+                                            dapibus nec turpis vel, semper malesuada ante, commodo iacul viverra.</div>
+                                        <div class="media">
+                                            <img src="/images/sontung.png" class="mr-3" alt="">
+                                            <div class="media-body">
+                                                <div class="overview">
+                                                    <div class="name"><b>Michael Holz</b></div>
+                                                    <div class="details">Web Developer / DevCorp</div>
+                                                    <div class="star-rating">
+                                                        <ul class="list-inline">
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star-o"></i>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="testimonial-wrapper">
+                                        <div class="testimonial">Vestibulum quis quam ut magna consequat faucibus.
+                                            Pellentesque eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque
+                                            virra. Quis quam ut magna consequat faucibus, metus id mi gravida.</div>
+                                        <div class="media">
+                                            <img src="/images/denvau.jpg" class="mr-3" alt="">
+                                            <div class="media-body">
+                                                <div class="overview">
+                                                    <div class="name"><b>Mary Saveley</b></div>
+                                                    <div class="details">Graphic Designer / MarsMedia</div>
+                                                    <div class="star-rating">
+                                                        <ul class="list-inline">
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star-o"></i>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="testimonial-wrapper">
+                                        <div class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus,
+                                            dapibus nec turpis vel, semper malesuada ante, commodo iacul viverra.</div>
+                                        <div class="media">
+                                            <img src="/images/ngoctrinh.jpg" class="mr-3" alt="">
+                                            <div class="media-body">
+                                                <div class="overview">
+                                                    <div class="name"><b>Martin Sommer</b></div>
+                                                    <div class="details">SEO Analyst / RealSearch</div>
+                                                    <div class="star-rating">
+                                                        <ul class="list-inline">
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star-o"></i>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="testimonial-wrapper">
+                                        <div class="testimonial">Vestibulum quis quam ut magna consequat faucibus.
+                                            Pellentesque eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque
+                                            virra. Quis quam ut magna consequat faucibus, metus id mi gravida.</div>
+                                        <div class="media">
+                                            <img src="/images/ngoctrinh.jpg" class="mr-3" alt="">
+                                            <div class="media-body">
+                                                <div class="overview">
+                                                    <div class="name"><b>John Williams</b></div>
+                                                    <div class="details">Web Designer / UniqueDesign</div>
+                                                    <div class="star-rating">
+                                                        <ul class="list-inline">
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star-o"></i>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br> <br> <br> <br> <br> <br>
+    </div>
+    <!-- review section ends -->
+
+    <!-- contact section starts  -->
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+            <span>LIÊN HỆ VỚI CHÚNG TÔI</span>
+            <hr>
+        </h1>
+
+        <div class="row" data-aos="fade-up" data-aos-duration="1500">
+
+            <div class="image" data-aos="fade-up" data-aos-anchor-placement="">
+                <img src="images/contact.gif" alt="">
+            </div>
+
+            <form action="" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                <div class="inputBox">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="inputBox">
+                    <input type="number" placeholder="Number">
+                    <input type="text" placeholder="Subject">
+                </div>
+                <textarea placeholder="Message" name="" id="" cols="30" rows="10"></textarea>
+                <input type="submit" class="btn" value="Send">
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span style="font-size: 23px;">Liên hệ với chúng tôi qua:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <a href="https://www.facebook.com/DTravel-103826409016954" target="_blank" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="mailto:datnmt.21it@vku.udn.vn" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="https://www.instagram.com/truongdat.27/" target="_blank" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://github.com/nguyenmanhtruongdat" target="_blank" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4" data-aos="fade-right" data-aos-duration="1500">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <span>DTRAVEL</span>
+                        </h6>
+                        <div id="fb-root"></div>
+                    <script async defer crossorigin="anonymous"
+                        src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v14.0" nonce="8Kr85mwV"></script>
+                    <div class="fb-page" data-href="https://www.facebook.com/DTravel-103826409016954"
+                    data-aos="fade-up-left" data-aos-duration="1500"
+                        data-tabs="timeline" data-width="200" data-height="100" data-small-header="false"
+                        data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"> 
+                        <blockquote cite="https://www.facebook.com/DTravel-103826409016954"
+                            class="fb-xfbml-parse-ignore"><a
+                                href="https://www.facebook.com/DTravel-103826409016954">DTravel</a></blockquote> 
+                    </div>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" data-aos="fade-up-right"
+                        data-aos-duration="1500">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Giới thiệu
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Về chúng tôi</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Liên hệ</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Câu hỏi thường gặp</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset"></a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" data-aos="fade-up-left"
+                        data-aos-duration="1500">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Sản phẩm
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Vé máy bay</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Tour du lịch</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Đặt khách sạn</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset" style="border-bottom: 100% 1px solid #0000;">Thư viện ảnh</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4" data-aos="fade-up-left">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Contact
+                        </h6>
+                        <p><i class="fas fa-home me-3"></i>Đà Nẵng, Việt Nam</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            datnmt.21it@vku.udn.vn
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> +(84) 975734712</p>
+                        <p><i class="fas fa-print me-3"></i> +(84) 332919872</p>
+                    </div>            
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+    </footer>
+    <!-- Footer -->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+        $(window).on("load", function () {
+            $(".preloading").fadeOut("slow");
+        });
+        var loader = document.getElementById("preloading");
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+        })
+    </script>
+
+</body>
+
+</html>
